@@ -5,7 +5,7 @@ class DemoPage:
         self.url = "https://demoqa.com/text-box"
 
     def open(self):
-        self.page.goto(self.url)
+        self.page.goto(self.url, wait_until="domcontentloaded", timeout=60000)
 
     def fill_form(self, name, email):
         self.page.fill("#userName", name)
