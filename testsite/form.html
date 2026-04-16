@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>QA form</title></head>
+<body style="font-family:sans-serif;padding:40px">
+  <h2>Тестовая форма</h2>
+  <input id="userName" placeholder="Name" style="display:block;margin:10px 0;padding:8px;width:250px">
+  <input id="userEmail" placeholder="Email" style="display:block;margin:10px 0;padding:8px;width:250px">
+  <button id="submit" onclick="show()" style="padding:8px 16px">Submit</button>
+  <div id="output" style="margin-top:20px;font-weight:bold"></div>
+<script>
+function show(){
+  const n = document.getElementById('userName').value;
+  const e = document.getElementById('userEmail').value;
+  document.getElementById('output').innerText = n + ' ' + e;
+}
+</script>
+</body>
+</html>

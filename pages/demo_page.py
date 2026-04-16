@@ -1,11 +1,15 @@
+import os
+from pathlib import Path
 
 class DemoPage:
     def __init__(self, page):
         self.page = page
-        self.url = "https://demoqa.com/text-box"
+        # путь к локальному файлу
+        html_path = Path(__file__).parent.parent / "testsite" / "form.html"
+        self.url = f"file://{html_path.resolve()}"
 
     def open(self):
-        self.page.goto(self.url, wait_until="domcontentloaded", timeout=60000)
+        self.page.goto(self.url)
 
     def fill_form(self, name, email):
         self.page.fill("#userName", name)
@@ -13,4 +17,4 @@ class DemoPage:
         self.page.click("#submit")
 
     def get_output(self):
-        return self.page.text_content("#output")
+        return self.page.inner_text("#output")
