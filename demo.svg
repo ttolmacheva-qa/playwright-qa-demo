@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000" flood-opacity="0.14"/>
+    </filter>
+    <clipPath id="window">
+      <rect x="100" y="80" width="700" height="320" rx="12"/>
+    </clipPath>
+  </defs>
+  
+  <g filter="url(#shadow)">
+    <rect x="100" y="80" width="700" height="320" rx="12" fill="white" stroke="#E5E5E5" stroke-width="1"/>
+    <g clip-path="url(#window)">
+      <rect x="100" y="80" width="700" height="44" fill="#F5F5F5"/>
+      <rect x="100" y="124" width="700" height="276" fill="#0B0B0B"/>
+      <line x1="100" y1="124" x2="800" y2="124" stroke="#E5E5E5" stroke-width="1"/>
+    </g>
+    <circle cx="124" cy="102" r="6.5" fill="#FF5F57"/>
+    <circle cx="146" cy="102" r="6.5" fill="#FEBC2E"/>
+    <circle cx="168" cy="102" r="6.5" fill="#28C840"/>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-size="14" fill="#E8E8E8">
+    <text x="124" y="164">pytest -v</text>
+    
+    <text x="124" y="212">tests/test_demo.py::test_form_submit_valid <tspan fill="#3DDC84" font-weight="600">PASSED</tspan></text>
+    <text x="124" y="240">tests/test_demo.py::test_form_submit_with_special_chars <tspan fill="#3DDC84" font-weight="600">PASSED</tspan></text>
+    <text x="124" y="268">tests/test_checkbox.py::test_checkboxes_select_two <tspan fill="#3DDC84" font-weight="600">PASSED</tspan></text>
+    
+    <text x="124" y="318" fill="#3DDC84">3 passed in 0.85s</text>
+  </g>
+</svg>
