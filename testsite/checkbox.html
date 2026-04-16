@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><title>Checkboxes</title></head>
+<body style="font-family:sans-serif;padding:40px">
+  <h2>Выбери навыки QA</h2>
+  <label><input type="checkbox" id="cb1" value="Manual"> Manual testing</label><br>
+  <label><input type="checkbox" id="cb2" value="API"> API testing</label><br>
+  <label><input type="checkbox" id="cb3" value="Playwright"> Playwright</label><br>
+  <button id="show" onclick="show()" style="margin-top:15px;padding:8px 16px">Показать</button>
+  <div id="result" style="margin-top:20px;font-weight:bold"></div>
+<script>
+function show(){
+  const selected = [];
+  document.querySelectorAll('input:checked').forEach(c=>selected.push(c.value));
+  document.getElementById('result').innerText = selected.join(', ');
+}
+</script>
+</body>
+</html>
