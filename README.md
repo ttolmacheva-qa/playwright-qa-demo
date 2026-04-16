@@ -35,8 +35,8 @@
 ## Как запустить локально
 
 ```bash
-git clone https://github.com/ttolmacheva-qa/playwright-qa-demo-ttolmacheva.git
-cd playwright-qa-demo-ttolmacheva
+git clone https://github.com/ttolmacheva-qa/playwright-qa-demo.git
+cd playwright-qa-demo
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 playwright install --with-deps chromium
@@ -53,7 +53,7 @@ open report.html
 
 ## CI и отчеты
 
-Каждый push запускает workflow `.github/workflows/test.yml`:
+Каждый push запускает workflow `.github/workflows/playwright.yml`:
 
 1. Устанавливает зависимости и браузеры
 2. Гоняет `pytest -v`
@@ -61,6 +61,8 @@ open report.html
 
 **Где скачать последний отчет:**
 `Actions` → последний успешный прогон → раздел **Artifacts** → `playwright-report`
+
+Прямая ссылка на прогоны: https://github.com/ttolmacheva-qa/playwright-qa-demo/actions
 
 ---
 
