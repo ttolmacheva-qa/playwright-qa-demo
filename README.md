@@ -1,4 +1,4 @@
-
+![Playwright Tests](https://github.com/ttolmacheva-qa/playwright-qa-demo/actions/workflows/playwright.yml/badge.svg)
 # QA Playwright Demo (Python)
 
 Manual QA 2+ года → первый шаг в автоматизацию.
