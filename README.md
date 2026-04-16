@@ -1,6 +1,6 @@
 # Playwright QA Demo — pet-проект для автотестов
 
-![Playwright Tests](https://github.com/ttolmacheva-qa/playwright-qa-demo-ttolmacheva/actions/workflows/test.yml/badge.svg)
+[![Playwright Tests](https://github.com/ttolmacheva-qa/playwright-qa-demo/actions/workflows/playwright.yml/badge.svg)](https://github.com/ttolmacheva-qa/playwright-qa-demo/actions)
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![Playwright](https://img.shields.io/badge/playwright-1.48-green)
 
